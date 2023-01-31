@@ -32,7 +32,6 @@ set Gender='M'
 Update empoyee_payrolls 
 set Gender='F'
 where name='shweta';
-
 ------- UC 7: Use Aggregate Functions and Group by Gender -------
 select SUM(Salary) FROM empoyee_payrolls
 where Gender = 'F' GROUP BY Gender;
