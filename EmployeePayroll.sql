@@ -27,6 +27,7 @@ CompanyName varchar(100))
 Insert into Company values ('Balrama'),('Amar Chitra Katha')
 Select * from Company
 
+
 --Create Employee Table
 drop table empoyee_payroll
 create table Employee
