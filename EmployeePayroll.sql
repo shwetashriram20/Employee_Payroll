@@ -18,6 +18,6 @@ insert into empoyee_payrolls Values ('kiya', 45000, '2022-12-31')
 select * from empoyee_payrolls
 
 ------- UC 5: Select Query using Cast() an GetDate() -------
-select Salary from Empoyee_Payrolls where Name = 'Bill'
-select Name from Empoyee_Payrolls where StartDate between '2020-01-01' and '2023-01-13'
+select Salary from empoyee_payrolls where Name = 'Bill'
+select Name from empoyee_payrolls where StartDate between '2020-01-01' and '2023-01-13'
 
