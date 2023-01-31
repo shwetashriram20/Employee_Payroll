@@ -23,7 +23,7 @@ select Name from empoyee_payrolls where StartDate between '2020-01-01' and '2023
 
 ------- UC 6: Add Gender Column and Update Table Values -------
 
-Alter table empoyee_payroll
+Alter table empoyee_payrolls
 add Gender char(1);
 Update empoyee_payrolls 
 set Gender='M'
