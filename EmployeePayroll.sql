@@ -1,23 +1,11 @@
---UC-1 creating database
-create database EmployeeServices;
---UC-2 creating Table
-create Table empoyee_payrolls
-(
-Id int identity(1,1)primary key not null,
-Name varchar(255),
-Salary int,
-StartDate datetime
-)
-
 --UC-3 Insert values in Table
-
-insert into empoyee_payrolls Values ('shweta', 60000, '2023-02-13')
-insert into empoyee_payrolls Values ('kiya', 45000, '2022-12-31')
-
+Insert into empoyee_payroll(name,salary,startDate) values
+('shweta',20000,'2023-03-12'),
+('Magesh',25000,'2023-04-18'),
+('Gayathri',10000,'2022-05-13'),
+('Aruna',30000,'2022-08-19');
 --UC-4 Retrieve All data--
-select * from empoyee_payrolls
-
+select * from empoyee_payroll;
 ------- UC 5: Select Query using Cast() an GetDate() -------
-select Salary from empoyee_payrolls where Name = 'Bill'
-select Name from empoyee_payrolls where StartDate between '2020-01-01' and '2023-01-13'
-
+select salary from empoyee_payroll where name='Magesh';
+select salary from empoyee_payroll where startDate BETWEEN Cast('2022-12-20' as Date) and GetDate();
