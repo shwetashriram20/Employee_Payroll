@@ -1,5 +1,6 @@
 --UC-1 creating database
 create database EmployeeServices;
+
 --UC-2 creating Table
 create Table empoyee_payrolls
 (
