@@ -8,4 +8,4 @@ Insert into empoyee_payroll(name,salary,startDate) values
 select * from empoyee_payroll;
 ------- UC 5: Select Query using Cast() an GetDate() -------
 select salary from empoyee_payroll where name='Magesh';
-select salary from empoyee_payroll where startDate BETWEEN Cast('2022-12-20' as Date) and GetDate();
+select salary from empoyee_payroll where startDate BETWEEN Cast('2018-01-01' as Date) and GetDate();
