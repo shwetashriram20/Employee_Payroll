@@ -14,6 +14,7 @@ set NetPay=(BasicPay - Deduction)
 update empoyee_payroll
 set TaxablePay=0,IncomeTax=0
 select * from empoyee_payroll;
+
 ------- UC 10: Adding another Value for Rujula in Editing Department -------
 
 Insert into empoyee_Payroll(name,BasicPay,StartDate,Address,EmployeePhoneNumber,EmployeeDepartment) values ('Gayathri',250000,'2020-04-20','Chennai,TN','9600054540','Editing');
